@@ -798,7 +798,6 @@ class _StepperState extends State<FxStepper> with TickerProviderStateMixin {
 
           //wrap container in Expanded widget
           Container(
-            margin: const EdgeInsets.symmetric(horizontal: 8.0),
             height: 1.0,
             color: Colors.grey.shade400,
           ),
