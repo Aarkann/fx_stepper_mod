@@ -798,6 +798,7 @@ class _StepperState extends State<FxStepper> with TickerProviderStateMixin {
 
           //wrap container in Expanded widget
           Container(
+            margin: const EdgeInsets.symmetric(horizontal: 8.0),
             height: 1.0,
             color: Colors.grey.shade400,
           ),
@@ -820,7 +821,6 @@ class _StepperState extends State<FxStepper> with TickerProviderStateMixin {
         Material(
           elevation: widget.elevation ?? 2,
           child: Container(
-            margin: const EdgeInsets.symmetric(horizontal: 24.0),
             height: _isLabel() ? 104.0 : 72.0,
             width: double.maxFinite,
             child: ListView(
