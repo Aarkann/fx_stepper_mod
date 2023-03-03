@@ -821,6 +821,7 @@ class _StepperState extends State<FxStepper> with TickerProviderStateMixin {
         Material(
           elevation: widget.elevation ?? 2,
           child: Container(
+            margin: const EdgeInsets.symmetric(horizontal: 24.0),
             height: _isLabel() ? 104.0 : 72.0,
             width: double.maxFinite,
             child: ListView(
@@ -832,7 +833,6 @@ class _StepperState extends State<FxStepper> with TickerProviderStateMixin {
         Expanded(
           child: ListView(
             physics: widget.physics,
-            padding: const EdgeInsets.all(24.0),
             children: <Widget>[
               AnimatedSize(
                 curve: Curves.fastOutSlowIn,
